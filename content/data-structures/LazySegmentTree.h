@@ -62,7 +62,8 @@ private:
 		else res = get(u+1, b, mid, l, r) + get(rc, mid+1, e, l, r);
 		t[u] = t[u+1] + t[rc]; return res;
 	}
-};/* (1) lazy_segtree<node> T; T.init(10) creates everything as node(). Consider using V<node> leaves to build
+}; // Hash upto here = f76c77
+/* (1) lazy_segtree<node> T; T.init(10) creates everything as node().Consider using V<node> leaves to build
 (2) upd(l, r, ...v): Order in ...v must be same as node.upd() fn */
 struct node {
 	ll sum = 0, lazy = 0;
